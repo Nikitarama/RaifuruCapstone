@@ -1,14 +1,18 @@
 <template>
      <div class="nav justify-content-start">
-    <img src="https://i.postimg.cc/13wd1TXf/LOGO-Sweet-NC.png" style="width:200px; padding-top:10px;">
-  </div>
+    
+ 
 
-<ul class="nav justify-content-end">
+  <!-- <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link> -->
+ </div>
+<ul class="nav justify-content-start">
     
   <li class="nav-item">
     <router-link to="/"> Home
 
 </router-link> | 
+
     </li>
 <li class="nav-item">
     <router-link to="/about"> About
@@ -48,3 +52,7 @@
   
 </ul>
 </template>
+
+<style scoped>
+
+</style>

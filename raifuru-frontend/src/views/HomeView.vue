@@ -1,7 +1,8 @@
 <template>
+  <div class="body">
   <div class="home">
     
-    <h1>Raifuru</h1>
+    <h1>Raifuru Artillery</h1>
     <p>“Wouldn’t you like to get a full historical background on the arson you’re
  planning on buying?”</p>
 
@@ -13,6 +14,8 @@ a full historical background on every pistol, rifle, etc., as well as trying to 
 For mostly women that want to become bad asses and protect themselves without the help of anyone!” 
 </p>
   </div>
+</div>
+
 </template>
 
 <script>
@@ -29,6 +32,13 @@ For mostly women that want to become bad asses and protect themselves without th
 
 <style scoped>
 
+.body {
+  /* background-image: url(https://i.postimg.cc/sXzmMDvD/rifles.jpg); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vh;
+  z-index: -2;
+}
 
 
 h1 {
@@ -42,6 +52,7 @@ h1 {
   box-shadow: 10px 10px 10px grey;
   padding: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  
 }
 
 

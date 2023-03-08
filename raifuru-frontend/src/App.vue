@@ -1,17 +1,31 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/AboutView">About</router-link> |
-    <router-link to="/AdminView">Admin</router-link> |
-    <router-link to="/ProductsView">Wishlist</router-link> |
-    <router-link to="/ContactView">Contact</router-link> |
-    <router-link to="/CheckoutView">Checkout</router-link> |
-    <router-link to="/LoginView">Login</router-link> |
-    <router-link to="/RegisterView">Register</router-link> |
+ <NavBar/>
+    <!-- <div class="container-fluid min vh-100"> -->
 
-  </nav>
-  <router-view/>
+      <router-view/>
+  
+    <FooterComp/> 
+
+
+  <!-- <nav> -->
+  <!-- <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link> -->
+  <!-- </nav> -->
+  
 </template>
+
+<script>
+import NavBar from './components/NavBar.vue';
+import FooterComp from './components/FooterComp.vue';
+export default {
+  components: {
+    NavBar,
+    FooterComp
+  }
+}
+
+</script>
+
 
 <style>
 #app {
