@@ -4,7 +4,7 @@ const path = require('path');
 
 const cors = require('cors');
 
-const db = require('./config/database');
+const db = require('./config/index');
 
 const bodyParser = require('body-parser');
 
@@ -29,14 +29,14 @@ app.use(
     bodyParser.urlencoded( {extended: false} )
 )
 
-route.get('^/$|/Home', (req, res)=>{
+route.get('^/$|/raifuru', (req, res)=>{
     res.status(200).sendFile(path.join(__dirname, './view/index.html'));
 })
 
-route.get('/Home', (req, res)=>{
+route.get('/raifuru', (req, res)=>{
     const strQry =
     `
-    SELECT itemID, name, descript, price
+    SELECT prodID, prodName, origin, yearModel, typeGun, price, img, roundCapacity, caliber
     FROM Products;
     `;
 
@@ -57,9 +57,9 @@ route.put('user/:id', bodyParser.json(), (req, res) => {
     let data = req.body;
     const strQry =
     `
-    update Products
+    update Users
     set ?
-    where itemID = ?;
+    where userID = ?;
     `;
 db.query(strQry, [data, req.params.id],
     (err)=>{
