@@ -49,7 +49,7 @@ h1 {
   margin: 10rem;
   margin-left: 300px;
   width: 55rem;
-  box-shadow: 10px 10px 10px grey;
+  box-shadow: 10px 10px 10px 10px grey;
   padding: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   
