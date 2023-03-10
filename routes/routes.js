@@ -8,6 +8,10 @@ const router = express.Router();
 const {showProducts, showProductById, createProduct, updateProduct, deleteProduct, showUsers, showUserById, deleteUser, createUser, updateUserData, userLogin} = require("../controllers/index");
   
   
+router.get('^/$|/raifuru', (req, res)=>{
+    res.status(200).sendFile(path.join(__dirname, './view/index.html'));
+})
+
 // Get All Product
 router.get('/products', showProducts);
   

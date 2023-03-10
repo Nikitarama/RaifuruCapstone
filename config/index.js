@@ -1,5 +1,5 @@
 require ('dotenv').config();
-const { createPool } = require('mysql');
+const { createPool } = require('mysql2');
 let connection = createPool ({
     host: process.env.dbHost,
     user: process.env.dbUser,
