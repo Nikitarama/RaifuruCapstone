@@ -46,10 +46,10 @@ nav a {
 }
 
 nav a:hover {
-  color:palevioletred;
+  color: lavender;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: burlywood;
 }
 </style>

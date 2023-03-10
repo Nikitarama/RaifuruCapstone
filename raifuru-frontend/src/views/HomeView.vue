@@ -14,6 +14,25 @@ a full historical background on every pistol, rifle, etc., as well as trying to 
 For mostly women that want to become bad asses and protect themselves without the help of anyone!” 
 </p>
   </div>
+
+  <div class="anime-girl">
+    <img src="https://i.postimg.cc/7YzJYF9H/pngegg.png">
+  </div>
+
+  <div class="row">
+    <div class="col-sml-4 d-flex">
+      
+      <img src="https://i.postimg.cc/QM7vT5gR/9hs69sf02it31.webp"/>
+    
+    
+      <img src="https://i.postimg.cc/PqVDD3hq/bjxhnie02it31.webp"/>
+    
+   
+      <img src="https://i.postimg.cc/fyPZjdym/2910bad104ec054f0c39a6347c498fa0.jpg"/>
+    </div>
+
+  </div>
+
 </div>
 
 </template>
@@ -37,22 +56,45 @@ For mostly women that want to become bad asses and protect themselves without th
   background-size: contain;
   background-repeat: no-repeat;
   width: 100vh;
-  z-index: -2;
+  
 }
 
 
 h1 {
   font-size: 70px;
-  border-bottom: 2px solid darkslategrey;
+  border-bottom: 2px solid darkkhaki;
+  color:darkkhaki;
 }
+
+.anime-girl {
+  margin-top: -500px;
+  z-index: -2;
+
+}
+
 .home {
-  margin: 10rem;
+  margin: 1rem;
   margin-left: 300px;
+  margin-bottom: 100px;
   width: 55rem;
   box-shadow: 10px 10px 10px 10px grey;
   padding: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  
+  font-size: 15px;
+  color: darkolivegreen;
+}
+
+.col-sml-4 img {
+  width: 500px;
+}
+
+.col-sml-4 {
+  margin: 1px;
+  margin-left: 10px;
+}
+.row {
+   row-gap: 10px;
+   grid-template-rows: 1fr 1fr;
 }
 
 

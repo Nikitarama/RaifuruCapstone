@@ -1,12 +1,5 @@
 <template>
-     <div class="nav justify-content-start">
-    
- 
-
-  <!-- <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> -->
- </div>
-
+<nav class="nav">
     <router-link to="/"> Home
 
 </router-link> | 
@@ -38,9 +31,26 @@
     <router-link to="/contact"> Contact
       
 </router-link> |
-
+</nav>
 </template>
 
 <style scoped>
+
+a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 10px;
+    color: darkkhaki;
+    text-decoration: none;
+}
+
+nav.nav {
+    color:darkkhaki;
+    font-size: 30px;
+}
+
+nav {
+    margin-left: 25rem;
+}
 
 </style>

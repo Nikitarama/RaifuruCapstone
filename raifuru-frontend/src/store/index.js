@@ -1,5 +1,5 @@
 import { createStore } from 'vuex'
-import axios from 'axios';
+// import axios from 'axios';
 const raifuruURL='https://raifurucapstone.onrender.com'; //from render.com
 export default createStore({
   state: {
