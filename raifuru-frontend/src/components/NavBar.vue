@@ -31,7 +31,12 @@
     <router-link to="/contact"> Contact
       
 </router-link> |
+
+<div class="nav-anime">
+    <img src="https://i.postimg.cc/FRMRZzfz/RAifuru-Artillery.gif" style="width: 250px; height:250px; margin-bottom: 30px;">
+</div>
 </nav>
+
 </template>
 
 <style scoped>
@@ -47,10 +52,22 @@ a {
 nav.nav {
     color:darkkhaki;
     font-size: 30px;
+    padding: 0;
 }
 
 nav {
     margin-left: 25rem;
+}
+
+.nav-anime {
+    padding-left: 55rem;
+    margin-bottom: -100px;
+    margin-top: -10px;
+}
+
+div.nav-anime {
+    margin: 0;
+
 }
 
 </style>

@@ -27,7 +27,7 @@ export default createStore({
   },
   actions: {
     async fetchUsers (context){
-      const res= await axios.get (`${raifuruURL}users`);
+      const res= await axios.get (`${raifuruURL}Users`);
       if (res.data){
         context.commit('setUsers',res.data)
       } else {
@@ -35,7 +35,7 @@ export default createStore({
       }
   },
     async fetchProducts (context){
-      const res= await axios.get(`${raifuruURL}products`);
+      const res= await axios.get(`${raifuruURL}Products`);
       const {result,err}= await res.data;
       if (result){
         context.commit('setProducts',result)

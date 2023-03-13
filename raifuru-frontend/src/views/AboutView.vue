@@ -1,5 +1,86 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <div class="about d-flex">
+    
+    <img src="https://i.postimg.cc/VN56HKrd/56164181-2459897407354092-3884515211599675392-n.jpg">
+    <div class="head">
+    <h1 class="header">This is the creator of Raifuru Artillery</h1>
+    <p>"I decided to come up with the idea of a shooting range for just women,</p> 
+     <p> when I started to see the situation for women in this country get</p>
+       <p>exponentially worse by the day. I thought to myself that something needs to </p>
+       <p>be done. And if I don't, then who will?..."</p>
+    </div>
+    </div>
+    <div class="contact-info">
+      <h1>Contact Me:</h1>
+      <p><span class="material-symbols-outlined">
+account_circle
+</span> Name: Nikita Ramawoothar</p>
+      <p><span class="material-symbols-outlined">
+mail
+</span> Email: crazyscientist996@gmail.com</p>
+      <p><span class="material-symbols-outlined">
+phone_iphone
+</span> Contact: 079 333 7610</p>
+      
+    </div>
+    <div class="anime-img">
+      <img src="https://i.postimg.cc/FRMRZzfz/RAifuru-Artillery.gif">
+    </div>
 </template>
+
+<style scoped>
+.about img {
+  height: 500px;
+  margin-right: -7rem;
+  border-radius: 30rem;
+  
+  padding: 0;
+  z-index: 2;
+}
+.about {
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ line-height: 15px;
+ margin-left: 100px;
+ margin-bottom: 20px;
+ margin-top: -10rem;
+}
+.head {
+  background-color: bisque;
+  width: 50rem;
+  top: 30rem;
+  margin-bottom: -30px;
+  height: 500px;
+  font-size: 17px;
+  height: 15rem;
+  padding-top: 20px;
+  margin-left: 50px;
+  box-shadow: 2px 2px 10px 2px grey;
+}
+
+.header {
+  border-bottom: 2px solid darkkhaki;
+  font-weight: bold;
+  
+}
+
+.anime-img {
+  margin-left: 35rem;
+  z-index: -2;
+  margin-top: -27rem;
+}
+
+.contact-info {
+  background-color: bisque;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px;
+  width: 40rem;
+  margin-top: 10px;
+  margin-left: 20px;
+  box-shadow: 2px 2px 10px 2px grey;
+}
+
+.material-symbols-outlined:hover {
+  color: darkkhaki;
+}
+
+</style>

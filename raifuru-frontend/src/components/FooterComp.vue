@@ -19,7 +19,7 @@
                         <h4>Information</h4>
                         <ul class="address1">
                             <li><i class="fa fa-map-marker"></i>Claremont 132 Herchers Cape Town</li>
-                            <li><i class="fa fa-envelope"></i><a href="mailto:#">sweetyNC@gmail.com</a></li>
+                            <li><i class="fa fa-envelope"></i><a href="mailto:#">Raifuru.Art@gmail.com</a></li>
                            
                         </ul>
                     </div>
@@ -30,6 +30,7 @@
                             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
 
@@ -46,9 +47,15 @@
 
 
 <style scoped>
+
+* {
+     font-family:  Georgia, "Times New Roman", Times, serif;
+     
+}
+
 footer {
     color: #fff;
-    font-family:  Georgia, "Times New Roman", Times, serif;
+   
 }
 ul {
     padding: 0px;
@@ -58,7 +65,7 @@ ol, ul {
 }
 .footer-day-time {
     padding-bottom: 30px;
-    border-bottom: 2px solid #7a6f6f;
+    border-bottom: 2px solid darkkhaki;
     padding-top: 14px;
     margin-bottom: 55px;
 }
@@ -76,7 +83,7 @@ ol, ul {
     font-weight: bold;
 }
 .footer-top {
-    background: #2f2f2f;
+    background: lavender;
     padding:50px 0 50px;
 }
 .footer-top h4 {
@@ -104,7 +111,7 @@ ul.address1 span {
     left: 0;
 }
 .address1 li a {
-    color: #fff;
+    color: darkkhaki;
     text-decoration: none;
 }
 ul.address1 i {
@@ -142,7 +149,14 @@ footer .social-icon li i:hover {
     float: right;
 }
 .social-icon a {
-    color: lightpink;
+    color: burlywood;
     font-size: 20px;
 }
+
+.social-icon a:hover 
+ {
+    color: darkkhaki;
+    scale: 1.7;
+}
+
 </style>

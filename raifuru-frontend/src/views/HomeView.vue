@@ -55,7 +55,7 @@ For mostly women that want to become bad asses and protect themselves without th
   /* background-image: url(https://i.postimg.cc/sXzmMDvD/rifles.jpg); */
   background-size: contain;
   background-repeat: no-repeat;
-  width: 100vh;
+  width: 70vh;
   
 }
 
@@ -67,7 +67,7 @@ h1 {
 }
 
 .anime-girl {
-  margin-top: -500px;
+  margin-top: -450px;
   z-index: -2;
 
 }
@@ -75,7 +75,7 @@ h1 {
 .home {
   margin: 1rem;
   margin-left: 300px;
-  margin-bottom: 100px;
+  margin-top: -90px;
   width: 55rem;
   box-shadow: 10px 10px 10px 10px grey;
   padding: 20px;
