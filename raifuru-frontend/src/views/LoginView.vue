@@ -43,4 +43,7 @@
     border-bottom: 2px solid darkkhaki;
 }
 
+input {
+    background-color: lavender;
+}
 </style>

@@ -1,6 +1,6 @@
 import { createStore } from 'vuex'
-// import axios from 'axios';
-const raifuruURL='https://raifurucapstone.onrender.com'; //from render.com
+import axios from 'axios';
+const raifuruURL='http://localhost:3500/'; //from render.com
 export default createStore({
   state: {
     users:null,
@@ -27,7 +27,7 @@ export default createStore({
   },
   actions: {
     async fetchUsers (context){
-      const res= await axios.get (`${raifuruURL}Users`);
+      const res= await axios.get (`${raifuruURL}users`);
       if (res.data){
         context.commit('setUsers',res.data)
       } else {
@@ -35,7 +35,7 @@ export default createStore({
       }
   },
     async fetchProducts (context){
-      const res= await axios.get(`${raifuruURL}Products`);
+      const res= await axios.get(`${raifuruURL}products`);
       const {result,err}= await res.data;
       if (result){
         context.commit('setProducts',result)

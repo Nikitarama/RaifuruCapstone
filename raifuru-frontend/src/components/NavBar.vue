@@ -61,13 +61,8 @@ nav {
 
 .nav-anime {
     padding-left: 55rem;
-    margin-bottom: -100px;
-    margin-top: -10px;
+    
 }
 
-div.nav-anime {
-    margin: 0;
-
-}
 
 </style>

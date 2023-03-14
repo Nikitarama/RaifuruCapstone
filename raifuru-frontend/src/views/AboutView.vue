@@ -1,6 +1,8 @@
 <template>
-  <div class="about d-flex">
-    
+  <div class="anime">
+    <img src="https://i.postimg.cc/mDLZvJQ4/pngegg-3.png">
+  </div>
+    <div class="about d-flex">
     <img src="https://i.postimg.cc/VN56HKrd/56164181-2459897407354092-3884515211599675392-n.jpg">
     <div class="head">
     <h1 class="header">This is the creator of Raifuru Artillery</h1>
@@ -31,18 +33,24 @@ phone_iphone
 <style scoped>
 .about img {
   height: 500px;
-  margin-right: -7rem;
-  border-radius: 30rem;
-  
+  margin-right: -2rem;
   padding: 0;
   z-index: 2;
+  border-radius: 10px;
 }
 .about {
  font-family: Georgia, 'Times New Roman', Times, serif;
  line-height: 15px;
- margin-left: 100px;
+ margin-left: 20px;
  margin-bottom: 20px;
- margin-top: -10rem;
+ margin-top: -63rem;
+ 
+}
+
+.anime img {
+  z-index: -3;
+  margin-right: 19rem;
+  margin-bottom: 4rem;
 }
 .head {
   background-color: bisque;
@@ -55,12 +63,13 @@ phone_iphone
   padding-top: 20px;
   margin-left: 50px;
   box-shadow: 2px 2px 10px 2px grey;
+  border-radius: 10px;
 }
 
 .header {
   border-bottom: 2px solid darkkhaki;
   font-weight: bold;
-  
+  background-image: url(https://i.postimg.cc/mDLZvJQ4/pngegg-3.png);
 }
 
 .anime-img {
@@ -70,13 +79,14 @@ phone_iphone
 }
 
 .contact-info {
-  background-color: bisque;
+  background-color: pink;
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 10px;
   width: 40rem;
   margin-top: 10px;
   margin-left: 20px;
   box-shadow: 2px 2px 10px 2px grey;
+  border-radius: 10px;
 }
 
 .material-symbols-outlined:hover {

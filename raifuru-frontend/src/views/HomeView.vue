@@ -1,18 +1,42 @@
 <template>
   <div class="body">
+    
   <div class="home">
     
     <h1>Raifuru Artillery</h1>
     <p>“Wouldn’t you like to get a full historical background on the arson you’re
  planning on buying?”</p>
 
-<p>“Wouldn’t you want to know how far your pistol of choice has come? And, who designed it?
+<p>“Wouldn’t you want to know how far your firearm of choice has come? And, who designed it?
 As well as, which era your arsenal belongs to and what kind of battlefields they were used on?”
 </p>
 <p>“Well, here at Raifuru Artillery (which is rifle in Japanese/Cantonese), we specialise in giving
-a full historical background on every pistol, rifle, etc., as well as trying to create an environment
-For mostly women that want to become bad asses and protect themselves without the help of anyone!” 
+a full historical background on every rifle, as well as trying to create an environment
+for mostly women that want to become bad asses and protect themselves without the help of anyone!” 
 </p>
+  </div>
+  <div class="carousel">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="https://i.postimg.cc/26Jc5SY7/t38bookw.jpg" style="height: 300px;" class="d-block rounded mx-auto d-block w-75" alt="CapeTown">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://i.postimg.cc/QMFcdkdv/t30earlyarisakas.jpg" style="height: 300px;" class="d-block rounded mx-auto d-block w-75" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://i.postimg.cc/HLt1j5v4/61v-JFg5wuq-L-AC-UF1000-1000-QL80.jpg" style="height: 300px;" class="d-block rounded mx-auto d-block w-75" alt="...">
+                  </div>
+                </div>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button> -->
+</div>
   </div>
 
   <div class="anime-girl">
@@ -59,6 +83,13 @@ For mostly women that want to become bad asses and protect themselves without th
   
 }
 
+.carousel {
+  left: 38rem;
+  bottom: 160px;
+  height: 1px;
+  width: 22rem;
+  
+}
 
 h1 {
   font-size: 70px;
@@ -81,7 +112,12 @@ h1 {
   padding: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 15px;
-  color: darkolivegreen;
+  color: white;
+  background-image: url(https://i.postimg.cc/4x4t7ytg/download.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
 }
 
 .col-sml-4 img {
