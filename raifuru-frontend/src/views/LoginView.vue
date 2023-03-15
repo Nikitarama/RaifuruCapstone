@@ -31,7 +31,7 @@
 }
 
 .form {
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-bottom: 5rem;
     width: 60rem;
     margin-left: 18rem;
@@ -41,6 +41,7 @@
 .head h1 {
     animation: fadeInLeft ;
     border-bottom: 2px solid darkkhaki;
+    margin-top: 12rem;
 }
 
 input {

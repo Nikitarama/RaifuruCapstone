@@ -41,7 +41,7 @@
     </table>
   </td>
 
-  <h1>User Profiles:</h1>
+  <h1 class="user">User Profiles:</h1>
   <td>
     <table class="userlist" id="userList">
       <thead>
@@ -93,32 +93,41 @@ export default {
 }
 .list {
   width: 94rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   border: 2px solid lightgrey;
+  background-image: url(https://i.postimg.cc/br7140Vf/4535695-army-girl-short-hair-purple-eyes-lying-on-front-anime-anime-girls-gun-weapon-silver-hair-smi.jpg);
+  background-size: cover;
 }
 
 .userlist {
     width: 94rem; 
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     border: 2px solid lightgrey;
-    
+    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 .list th{
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid lightgrey;
 }
 
 .list td {
     border-bottom: 2px solid lightgrey;
+    color: black;
 }
 
 .userlist th {
     border-bottom: 2px solid lightgrey;
+    
+}
+.user {
+  margin-top: 10px;
 }
 
 h1 {
     background-color: lavender;
     padding: 10px;
+    margin-top: 15rem;
 }
 
 </style>

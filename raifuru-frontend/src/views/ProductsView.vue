@@ -10,13 +10,13 @@
         class="card col-3"
         v-for="product in products"
         :key="product.prodID"
-        style="height: 350px"
+        
       >
         <img
           :src="product.img"
           class="card-img-top"
           alt="..."
-          style="height: 200px"
+          
         />
         <div class="card-body">
           <p class="name">{{ product.prodName }}</p>
@@ -55,7 +55,9 @@ export default {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .products-page {
-    background-image: url();
+    margin-top: 16rem;
+    padding: 20px;
+    background-position: center 40px;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #F5F5F5;
@@ -63,13 +65,14 @@ export default {
     background-image: url(https://i.postimg.cc/zBYsRgdG/pngegg-9.png);
 }
 .card {
-    margin-bottom: 40px;
-    margin-left: 60px;
-    width: 300px;
+    margin: auto;
+    width: 280px;
     padding: 0;
+    background-color: rgba(223, 222, 222, 0.7);
 }
  img {
-    max-width: 350px;
+    
+    height: 170px;
 }
 .view {
     border-radius: 10px;
@@ -79,8 +82,10 @@ export default {
 }
 
 .price {
-  color: darkseagreen;
+  
   font-weight: bold;
+  font-size: 19px;
+  border-top: 1px solid grey;
 }
 .view:hover {
     background-color: seagreen;

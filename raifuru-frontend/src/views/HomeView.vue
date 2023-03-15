@@ -98,7 +98,7 @@ h1 {
 }
 
 .anime-girl {
-  margin-top: -450px;
+  margin-top: -430px;
   z-index: -2;
 
 }
@@ -106,7 +106,7 @@ h1 {
 .home {
   margin: 1rem;
   margin-left: 300px;
-  margin-top: -90px;
+  margin-top: 12rem;
   width: 55rem;
   box-shadow: 10px 10px 10px 10px grey;
   padding: 20px;

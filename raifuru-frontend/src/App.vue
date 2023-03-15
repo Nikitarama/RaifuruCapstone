@@ -1,8 +1,10 @@
 <template>
  <NavBar/>
     <!-- <div class="container-fluid min vh-100"> -->
+<body>
 
-      <router-view/>
+      <router-view/> 
+</body>
   
     <FooterComp/> 
 
@@ -53,6 +55,9 @@ nav a:hover {
 nav a.router-link-exact-active {
   color: burlywood;
 }
-
+body{
+  min-height: 100%;
+  overflow-x: hidden;
+}
 
 </style>

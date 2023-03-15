@@ -1,6 +1,7 @@
 <template>
-  <div class="anime">
-    <img src="https://i.postimg.cc/mDLZvJQ4/pngegg-3.png">
+  <div class="all">
+       <img src="https://i.postimg.cc/mDLZvJQ4/pngegg-3.png" class="ani-img">
+    <div class="anime">
   </div>
     <div class="about d-flex">
     <img src="https://i.postimg.cc/VN56HKrd/56164181-2459897407354092-3884515211599675392-n.jpg">
@@ -28,9 +29,16 @@ phone_iphone
     <div class="anime-img">
       <img src="https://i.postimg.cc/FRMRZzfz/RAifuru-Artillery.gif">
     </div>
+ 
+  </div>
 </template>
 
 <style scoped>
+.all{
+  height: 100vh;
+  overflow-y:hidden;
+  
+}
 .about img {
   height: 500px;
   margin-right: -2rem;
@@ -43,20 +51,21 @@ phone_iphone
  line-height: 15px;
  margin-left: 20px;
  margin-bottom: 20px;
- margin-top: -63rem;
+ margin-top: -50rem;
  
 }
 
-.anime img {
+.ani-img {
   z-index: -3;
-  margin-right: 19rem;
-  margin-bottom: 4rem;
+  margin: 0;
+  padding-right: 10rem;
+  padding-top: 0;
+  
+  
 }
 .head {
   background-color: bisque;
   width: 50rem;
-  top: 30rem;
-  margin-bottom: -30px;
   height: 500px;
   font-size: 17px;
   height: 15rem;
@@ -81,10 +90,11 @@ phone_iphone
 .contact-info {
   background-color: pink;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 10px;
+  
   width: 40rem;
   margin-top: 10px;
   margin-left: 20px;
+  margin-bottom: 3rem;
   box-shadow: 2px 2px 10px 2px grey;
   border-radius: 10px;
 }

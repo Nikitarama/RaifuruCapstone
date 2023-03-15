@@ -44,7 +44,7 @@
 }
 
 .register {
-    margin-top: -13rem;
+    margin-top: 3rem;
     
 }
 

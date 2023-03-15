@@ -85,6 +85,11 @@ ol, ul {
 .footer-top {
     background: lavender;
     padding:50px 0 50px;
+    width: 100vw;
+    
+}
+.footer-top> *{
+    flex-basis: 100%;
 }
 .footer-top h4 {
     font-size: 19px;
