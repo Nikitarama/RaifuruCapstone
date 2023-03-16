@@ -3,7 +3,7 @@
     <div class="register">
         
         <div class="heading">
-            <h1>Register Here:</h1>
+            <h1>Create an Account Here:</h1>
         </div>
 
         <form class="form">
@@ -50,7 +50,7 @@
 
 form {
     width: 60rem;
-    margin-left: 18rem;
+    margin-left: 16rem;
     background-color: lavender;
     padding: 30px;
     line-height: 10px;
@@ -64,7 +64,7 @@ form {
 .heading {
     border-bottom: 2px solid darkkhaki;
     width: 40rem;
-    margin-left: 30rem;
+    margin-left: 26rem;
 }
 
 

@@ -29,78 +29,93 @@ phone_iphone
     <div class="anime-img">
       <img src="https://i.postimg.cc/FRMRZzfz/RAifuru-Artillery.gif">
     </div>
- 
-  </div>
+  
+    </div>
+
 </template>
 
 <style scoped>
 .all{
   height: 100vh;
   overflow-y:hidden;
-  
+  /* background-image: url(https://i.postimg.cc/SRqyF9tj/Arisaka-evolution.jpg); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 0px;
 }
 .about img {
   height: 500px;
   margin-right: -2rem;
   padding: 0;
-  z-index: 2;
+  z-index: 1;
   border-radius: 10px;
+  margin-top: 30px;
 }
 .about {
  font-family: Georgia, 'Times New Roman', Times, serif;
  line-height: 15px;
  margin-left: 20px;
  margin-bottom: 20px;
- margin-top: -50rem;
+ margin-top: -52rem;
  
 }
 
 .ani-img {
-  z-index: -3;
-  margin: 0;
-  padding-right: 10rem;
-  padding-top: 0;
   
+  z-index: 3;
+  padding-right: 34rem;
+  padding-top: -1rem;
   
 }
 .head {
-  background-color: bisque;
-  width: 50rem;
+  background-image: url(https://i.postimg.cc/q7F8zjHh/pngegg-16.png);
+  width: 30rem;
   height: 500px;
   font-size: 17px;
   height: 15rem;
-  padding-top: 20px;
-  margin-left: 50px;
-  box-shadow: 2px 2px 10px 2px grey;
+ margin-top: 70px;
+  margin-left: 18rem;
   border-radius: 10px;
+  background-size: cover;
+  background-position-y: 350px;
 }
 
 .header {
-  border-bottom: 2px solid darkkhaki;
+  border-bottom: 3px solid darkkhaki;
   font-weight: bold;
   background-image: url(https://i.postimg.cc/mDLZvJQ4/pngegg-3.png);
+  color: darkslategrey;
+  font-size: 43px;
+  
 }
 
 .anime-img {
-  margin-left: 35rem;
+  margin-left: 40rem;
   z-index: -2;
-  margin-top: -27rem;
+  margin-top: -28rem;
 }
 
 .contact-info {
   background-color: pink;
   font-family: Georgia, 'Times New Roman', Times, serif;
   
-  width: 40rem;
+  width: 23rem;
   margin-top: 10px;
   margin-left: 20px;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  padding-bottom: 10px;
+  line-height: 1px;
   box-shadow: 2px 2px 10px 2px grey;
   border-radius: 10px;
 }
 
 .material-symbols-outlined:hover {
   color: darkkhaki;
+}
+
+.page {
+  width: 1rem;
+  height: 10rem;
 }
 
 </style>

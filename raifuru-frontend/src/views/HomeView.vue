@@ -1,10 +1,20 @@
 <template>
   <div class="body">
-    
-  <div class="home">
-    
+    <div class="animate_animated animate__fadeInLeft">
+      <h1>Welcome to</h1>
+    </div>
+
+  <div class="home">  
     <h1>Raifuru Artillery</h1>
-    <p>“Wouldn’t you like to get a full historical background on the arson you’re
+    <button class="login">Login</button><button class="register">Create an Account</button>
+    <img src="https://i.postimg.cc/7LgGRh06/pngegg-7.png">
+    </div>
+
+    <!-- <div class="ad">
+      <img src="https://i.postimg.cc/1X9M7bdg/anatomy-arisaka-type99.png">
+    </div> -->
+    
+    <!-- <p>“Wouldn’t you like to get a full historical background on the arson you’re
  planning on buying?”</p>
 
 <p>“Wouldn’t you want to know how far your firearm of choice has come? And, who designed it?
@@ -13,8 +23,8 @@ As well as, which era your arsenal belongs to and what kind of battlefields they
 <p>“Well, here at Raifuru Artillery (which is rifle in Japanese/Cantonese), we specialise in giving
 a full historical background on every rifle, as well as trying to create an environment
 for mostly women that want to become bad asses and protect themselves without the help of anyone!” 
-</p>
-  </div>
+</p> -->
+  
   <div class="carousel">
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
                 <div class="carousel-inner">
@@ -27,7 +37,9 @@ for mostly women that want to become bad asses and protect themselves without th
                   <div class="carousel-item" data-bs-interval="2000">
                     <img src="https://i.postimg.cc/HLt1j5v4/61v-JFg5wuq-L-AC-UF1000-1000-QL80.jpg" style="height: 300px;" class="d-block rounded mx-auto d-block w-75" alt="...">
                   </div>
+                  
                 </div>
+                <h5>Everything you need to know about guns</h5>
                 <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
@@ -59,6 +71,7 @@ for mostly women that want to become bad asses and protect themselves without th
 
 </div>
 
+
 </template>
 
 <script>
@@ -75,41 +88,73 @@ for mostly women that want to become bad asses and protect themselves without th
 
 <style scoped>
 
-.body {
-  /* background-image: url(https://i.postimg.cc/sXzmMDvD/rifles.jpg); */
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 70vh;
+ * {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   
 }
+body{
+  overflow-x: hidden;
+}
+.body {
+  background-image: url(https://i.postimg.cc/4x4t7ytg/download.jpg);
+  /* background-image: url(https://i.postimg.cc/sXzmMDvD/rifles.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 26rem;
+  background-position-x: 40px;
+}
+
+/* .ad {
+  z-index: -3;
+  width: 1rem;
+  height: 10rem;
+  margin-top: 4rem;
+} */
 
 .carousel {
-  left: 38rem;
-  bottom: 160px;
+  position: relative;
+  left: 36.5rem;
+  bottom: 70px;
   height: 1px;
   width: 22rem;
   
 }
 
-h1 {
-  font-size: 70px;
-  border-bottom: 2px solid darkkhaki;
-  color:darkkhaki;
+.home h1 {
+  font-weight: bold;
+  font-size: 80px;
+  border:3px solid darkkhaki;
+  color:orange;
+  background-color: rgba(96, 92, 92, 0.5);
+}
+
+.animate_animated> h1 {
+  position: relative;
+  left: 21rem;
+  top: 5rem;
+  font-size: 3rem;
+  animation-name: fadeInLeft;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  border-bottom: 3px solid darkkhaki;
+  color: darkkhaki;
 }
 
 .anime-girl {
-  margin-top: -430px;
-  z-index: -2;
+  margin-top: -30rem;
+  margin-right: 12rem;
 
 }
 
 .home {
+
   margin: 1rem;
   margin-left: 300px;
-  margin-top: 12rem;
+  margin-top: 13rem;
   width: 55rem;
+  height: 14rem;
   box-shadow: 10px 10px 10px 10px grey;
-  padding: 20px;
+  padding: 40px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 15px;
   color: white;
@@ -117,7 +162,35 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
- 
+  background-position-y: -60px;
+}
+
+.home img {
+  position: relative;
+  width: 40rem;
+  right: 10rem;
+  bottom: 24rem;
+}
+
+.home> button {
+  background-color: rgba(96, 92, 92, 0.2);
+  margin: 10px;
+  border: 2px solid orange;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.home >button:hover {
+  background-color: orange;
+}
+
+.login {
+  margin-left: 10rem;
+}
+
+.login:hover {
+
+  background-color: orange;
 }
 
 .col-sml-4 img {

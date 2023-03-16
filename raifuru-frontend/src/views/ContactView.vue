@@ -5,6 +5,10 @@
     </div>
     <form action="https://formspree.io/f/xzbqvyyd"
   method="POST">
+  <div class="mb-3">
+    <label for="exampleInputName" class="form-label">Full Name</label>
+    <input type="name" class="form-control" id="exampleInputName">
+  </div>
         
         <div class="mb-3">
             <label for="email" class="form-label">Email address</label>

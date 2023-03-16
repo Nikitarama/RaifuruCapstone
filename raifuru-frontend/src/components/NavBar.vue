@@ -13,16 +13,23 @@ menu
   </div>
   <div class="offcanvas-body">
 
-    <router-link to="/register"> Register
-      
-</router-link> |
+    <router-link to="/register"> <span class="material-symbols-outlined">
+assignment_add
+</span> Register  
 
-    <router-link to="/login"> Login
       
-</router-link> |
-<router-link to="/admin"> Admin
+</router-link> <br>
 
-</router-link> | 
+    <router-link to="/login"><span class="material-symbols-outlined">
+login
+</span> Login 
+      
+</router-link> <br>
+<router-link to="/admin"><span class="material-symbols-outlined">
+format_list_bulleted_add
+</span> Admin 
+
+</router-link>  
   </div>
 </div>
     <div class="col-5">
@@ -36,7 +43,7 @@ menu
 </router-link> |
     
  
-    <router-link to="/products"> Guns
+    <router-link to="/products"> Rifles
       
 </router-link> |
     
@@ -68,32 +75,57 @@ a {
     font-size: 30px;
     align-items: center;
     height: 4rem;
-    margin-left: 25rem;
-    padding: 0px;
+    padding: 1rem;
     width: 100%;
+    background-image: url(https://i.postimg.cc/BbD45wK8/241327033-4918064558210241-5214000303005563559-n.jpg);
+    background-position-y: 35rem ;
+    background-size: cover;
+}
+.offcanvas-body {
+    background-image: url(https://i.postimg.cc/W3dXHBS4/pngegg-10.png);
+}
+
+.col-5 {
+    margin-bottom: 2rem;
+    position: relative;
+    left: 30rem;
+    
 }
 
 .nav-anime {
-    margin-left: 55rem;
+    position: relative;
+    margin-left: 80rem;
+    margin-top: 2rem;
     padding: 0;    
 }
 
 .btn {
    position: relative;
-   top: 3rem;
+   top: 3.7rem;
    right: 5rem;
    background-color: darkkhaki;
-   border: 2px solid antiquewhite;
+   border: 3px solid darkkhaki;
+   color: darkkhaki;
+   background-color: rgba(96, 92, 92, 0.5);
+
 }
 
 .btn:hover {
-    color: darkkhaki;
-    background-color: gray;
-    border: 2px solid darkkhaki;
-    box-shadow: 2px 2px 10px lightgrey;
+    background-color: darkkhaki;
+    border: 2px solid antiquewhite;
+    color: antiquewhite;
+    border: 3px solid antiquewhite;
+    /* box-shadow: 2px 2px 10px lightgrey; */
 }
 
 .material-symbols-outlined {
     font-size: 30px;
+}
+
+.offcanvas-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    /* color: linear-gradient(to right(lightgrey, darkkhaki, yellow)); */
 }
 </style>
