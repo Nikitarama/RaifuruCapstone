@@ -30,10 +30,14 @@
             />
           </td>
           <td>
-            <button id="{{product.ID}}" class="btn btn-danger">Delete</button>
+            <button @click="this.$store.dispatch('deleteProduct', product.ID)" id="{{product.ID}}" class="btn btn-danger"><span class="material-symbols-outlined">
+delete
+</span></button>
           </td>
           <td>
-            <button id="{{product.ID}}" class="btn btn-success">Edit
+            <button @click="this.$store.dispatch('addProduct', product.ID)" id="{{product.ID}}" class="btn btn-success"><span class="material-symbols-outlined">
+edit
+</span>
             </button>
           </td>
         </tr>
@@ -50,6 +54,7 @@
           <th>First Name</th>
           <th>Last Name</th>
           <th>EmailAdd</th>
+          <th>Province</th>
         </tr>
       </thead>
       <tbody>
@@ -58,7 +63,7 @@
           <td>{{ user.firstName }}</td>
           <td>{{ user.lastName }}</td>
           <td>{{ user.emailAdd }}</td>
-         
+          <td>{{ user.province }}</td>
         </tr>
       </tbody>
     </table>
@@ -84,19 +89,19 @@ export default {
   },
 };
 
+
+
 </script>
 
 <style scoped>
 
-* {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
 .list {
   width: 94rem;
   margin-bottom: 1rem;
   border: 2px solid lightgrey;
   background-image: url(https://i.postimg.cc/br7140Vf/4535695-army-girl-short-hair-purple-eyes-lying-on-front-anime-anime-girls-gun-weapon-silver-hair-smi.jpg);
   background-size: cover;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .userlist {
@@ -105,6 +110,7 @@ export default {
     border: 2px solid lightgrey;
     margin-top: 10px;
     margin-top: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .list th{
@@ -128,6 +134,7 @@ h1 {
     background-color: lavender;
     padding: 10px;
     margin-top: 15rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 </style>

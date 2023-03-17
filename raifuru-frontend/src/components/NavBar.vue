@@ -18,39 +18,55 @@ assignment_add
 </span> Register  
 
       
-</router-link> <br>
+</router-link> 
+<br>
 
     <router-link to="/login"><span class="material-symbols-outlined">
 login
 </span> Login 
       
-</router-link> <br>
+</router-link> 
+<br>
+
 <router-link to="/admin"><span class="material-symbols-outlined">
 format_list_bulleted_add
 </span> Admin 
 
-</router-link>  
+</router-link> 
+ 
   </div>
 </div>
     <div class="col-5">
-    <router-link to="/"> Home
+    <router-link to="/"><span class="material-symbols-outlined"> home
+</span> Home
 
 </router-link> | 
 
  
-    <router-link to="/about"> About
+    <router-link to="/about"><span class="material-symbols-outlined">
+account_box
+</span> About
 
 </router-link> |
     
  
-    <router-link to="/products"> Rifles
+    <router-link to="/products"><span class="material-symbols-outlined">
+lab_profile
+</span> Rifles
       
 </router-link> |
     
 
-    <router-link to="/contact"> Contact
+    <router-link to="/contact"><span class="material-symbols-outlined">
+contact_mail
+</span> Contact
       
-</router-link> 
+</router-link> |
+<router-link to="/cart"><span class="material-symbols-outlined">
+shopping_cart
+</span> Cart 
+
+</router-link>  
 </div>
 <div class="nav-anime">
     <img src="https://i.postimg.cc/FRMRZzfz/RAifuru-Artillery.gif" style="width: 250px; height:250px; margin-bottom: 30px;">
@@ -71,14 +87,17 @@ a {
 }
 
 .nav {
+    
     color:darkkhaki;
     font-size: 30px;
     align-items: center;
-    height: 4rem;
-    padding: 1rem;
+    height: 5rem;
+    padding-left: 22rem;
+    padding-bottom: 1rem;
     width: 100%;
+    padding-bottom: 2rem;
     background-image: url(https://i.postimg.cc/BbD45wK8/241327033-4918064558210241-5214000303005563559-n.jpg);
-    background-position-y: 35rem ;
+    background-position-y: 40rem ;
     background-size: cover;
 }
 .offcanvas-body {
@@ -88,25 +107,26 @@ a {
 .col-5 {
     margin-bottom: 2rem;
     position: relative;
-    left: 30rem;
-    
+    left: 25rem;
+    bottom: 2.8rem;
+    width: 44rem;
 }
 
 .nav-anime {
     position: relative;
-    margin-left: 80rem;
-    margin-top: 2rem;
+    margin-left: 79.5rem;
+    margin-top: -30px;
     padding: 0;    
 }
 
 .btn {
    position: relative;
-   top: 3.7rem;
-   right: 5rem;
+   top: 4.3rem;
+   right: 7.5rem;
    background-color: darkkhaki;
    border: 3px solid darkkhaki;
    color: darkkhaki;
-   background-color: rgba(96, 92, 92, 0.5);
+   background-color: rgba(96, 92, 92, 0.1);
 
 }
 

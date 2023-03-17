@@ -19,7 +19,7 @@
         <input type="checkbox" class="form-check-input" id="exampleCheck1">
         <label class="form-check-label" for="exampleCheck1">Remember My Password</label>
         </div>
-        <button type="submit" class="btn btn-secondary">Submit</button>
+        <button id="{{user.ID}}" type="submit" class="btn btn-secondary">Submit</button>
     </form>
 </template>
 

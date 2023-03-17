@@ -44,7 +44,27 @@ export default createStore({
       }
   },
 
-},
-  modules: {
-  }
-})
+  async deleteProduct (content) {
+    const res = await axios.delete(`${raifuruURL}products`);
+    const {result,err}= await res.data;
+    if (result){
+      context.commit('setProducts',result)
+    } else {
+      context.commit('setMessage',err)
+
+}
+}},
+async addProduct (content) {
+  const res = await axios.post(`${raifuruURL}products`);
+  const {result,err}= await res.data;
+  if (result){
+    context.commit('setProducts',result)
+  } else {
+    context.commit('setMessage',err)
+
+}
+}},
+)
+
+modules: {
+}

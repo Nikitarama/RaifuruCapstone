@@ -40,6 +40,7 @@ h1 {
     margin-left: 18rem;
     border-bottom: 2px solid darkkhaki;
     width: 60rem;
+    color: slategray;
 }
 
 

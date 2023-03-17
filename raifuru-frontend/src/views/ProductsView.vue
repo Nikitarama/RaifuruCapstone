@@ -34,6 +34,7 @@
           <!-- <RouterLink> -->
 
             <button class="view" href="#">View Details</button>
+            
           <!-- </RouterLink> -->
         </div> 
       </div>
@@ -69,10 +70,6 @@ export default {
 
 <style scoped>
 
-* {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 .searchBar input[type=text]{
   position: relative;
   border-radius: 20px;
@@ -80,8 +77,11 @@ export default {
   width: 40rem;
   top: 10rem;
   border: 2px solid darkkhaki;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 .products-page {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 18rem;
     padding: 20px;
     background-position: center 40px;
@@ -92,6 +92,7 @@ export default {
     background-image: url(https://i.postimg.cc/zBYsRgdG/pngegg-9.png);
 }
 .card {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: auto;
     width: 280px;
     padding: 0;
@@ -124,6 +125,7 @@ export default {
 }
 
 .products-page h1 {
+  color: slategray;
   margin-bottom: 10rem;
   border-bottom: 2px solid darkkhaki;
 }

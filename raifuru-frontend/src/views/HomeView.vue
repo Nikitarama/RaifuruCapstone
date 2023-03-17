@@ -51,6 +51,14 @@ for mostly women that want to become bad asses and protect themselves without th
 </div>
   </div>
 
+  <div class="social-icons">
+  <a href="#"><i class="fab-fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-twitch"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a> 
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+</div>
+
   <div class="anime-girl">
     <img src="https://i.postimg.cc/7YzJYF9H/pngegg.png">
   </div>
@@ -138,6 +146,7 @@ body{
   animation-fill-mode: forwards;
   border-bottom: 3px solid darkkhaki;
   color: darkkhaki;
+  text-shadow: 1px 1px 2px grey;
 }
 
 .anime-girl {
@@ -147,7 +156,7 @@ body{
 }
 
 .home {
-
+  
   margin: 1rem;
   margin-left: 300px;
   margin-top: 13rem;

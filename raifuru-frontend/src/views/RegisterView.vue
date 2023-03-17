@@ -16,7 +16,21 @@
     <label for="exampleInputName" class="form-label">Last Name</label>
     <input type="name" class="form-control" id="exampleInputName">
   </div>
-  
+  <div class="md-3 mb-2">              
+    <label for="validationDefault04" class="form-label">Province</label>              
+    <select class="form-select" id="validationDefault04" name="name" required>                
+      <option selected disabled value="">Choose One</option>                
+      <option>Western Cape</option>                
+      <option>Eastern Cape</option>                
+      <option>Free State</option>                
+      <option>KwaZulu-Natal</option>                
+      <option>Limpopo</option>                
+      <option>Northern Cape</option>                
+      <option>North West</option>                
+      <option>Gauteng</option>                
+      <option>Mpumalanga</option>              
+    </select>            
+  </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -44,8 +58,7 @@
 }
 
 .register {
-    margin-top: 3rem;
-    
+    margin-top: 3rem;  
 }
 
 form {
