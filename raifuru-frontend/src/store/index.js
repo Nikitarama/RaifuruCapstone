@@ -8,13 +8,14 @@ export default createStore({
     products:null,
     product:null,
     showSpinner:true,
-    message:null
+    message:null,
+    singleProduct:null
   },
   getters: {
   },
 
   mutations: {
-    setUsers(state,values){
+    setUsers(state, users){
       state.users=values
     },
     setProducts(state,values){
@@ -22,6 +23,9 @@ export default createStore({
     },
     setMessage(state,message){
       state.message=message
+    },
+    setSingleProduct(state, product){
+      state.singleProduct = product;
     }
     
   },
@@ -53,7 +57,7 @@ export default createStore({
       context.commit('setMessage',err)
 
 }
-}},
+},
 async addProduct (content) {
   const res = await axios.post(`${raifuruURL}products`);
   const {result,err}= await res.data;
@@ -61,10 +65,23 @@ async addProduct (content) {
     context.commit('setProducts',result)
   } else {
     context.commit('setMessage',err)
-
-}
-}},
-)
+  }
+},
+async singleProduct(context, id){
+  const res = await axios.get(`${raifuruURL}products/${id}`,)
+  const {data,err} = await res;
+  console.log(res.data)
+  if(data){
+    console.log(data)
+    context.commit('setSingleProduct', data)
+  }else {
+    console.log(err)
+    context.commit('setMessage', err)
+  }
+},
+  },
 
 modules: {
 }
+
+})

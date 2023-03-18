@@ -48,17 +48,14 @@
 
 <style scoped>
 
-* {
-     font-family:  Georgia, "Times New Roman", Times, serif;
-     
-}
 
 footer {
     color: #fff;
-   
+    font-family:  Georgia, "Times New Roman", Times, serif;
 }
 ul {
     padding: 0px;
+
 }
 ol, ul {
     margin-bottom: 0px;
@@ -72,16 +69,12 @@ ol, ul {
 .footer-day-time ul li {
     display: inline;
     margin-right: 20px;
+    font-family:  Georgia, "Times New Roman", Times, serif;
 }
 .footer-day-time ul li:last-child {
     margin-right: 0px;
 }
-.phone-no a {
-    color: #fff;
-    font-family: PlayfairDisplay-Black;
-    font-size: 34px;
-    font-weight: bold;
-}
+
 .footer-top {
     background: lavender;
     padding:50px 0 50px;
@@ -95,13 +88,16 @@ ol, ul {
     font-size: 19px;
     text-transform: uppercase;
     margin-bottom: 30px;
+    font-family:  Georgia, "Times New Roman", Times, serif;
 }
 .footer-top p {
     font-size: 13px;
     line-height: 2;
+    font-family:  Georgia, "Times New Roman", Times, serif;
 }
 footer p {
   margin-bottom:0;
+  font-family:  Georgia, "Times New Roman", Times, serif;
 }
 .address1 li {
     list-style: none;
@@ -138,21 +134,7 @@ footer .social-icon li i:hover {
     color:#7a6f6f;
     scale: 1.5;
 }
-.footer-bottom {
-    background: #4b8800;
-    padding: 10px 0px;
-}
-.footer-bottom ul li {
-    display: inline;
-    margin-right: 20px;
-    font-size: 18px;
-}
-.footer-bottom ul li a{
-    color:#fff;
-}
-.footer-bottom ul {
-    float: right;
-}
+
 .social-icon a {
     color: burlywood;
     font-size: 20px;

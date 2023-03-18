@@ -18,24 +18,21 @@
         <div
         class="card col-3"
         v-for="product in products"
-        :key="product.prodID"
+        :key="product.prodID">
         
-      >
         <img
           :src="product.img"
           class="card-img-top"
-          alt="..."
-          
-        />
+          alt="..."/>
         <div class="card-body">
           <p class="name">{{ product.prodName }}</p>
           <p class="name">{{ product.caliber }}</p>
           <p class="price">R{{ product.price }}</p>
           <!-- <RouterLink> -->
-
+            <RouterLink :to="{name: 'singleProduct', params:{id:product.prodID}}">
             <button class="view" href="#">View Details</button>
-            
-          <!-- </RouterLink> -->
+             </RouterLink>
+         
         </div> 
       </div>
     </div>
