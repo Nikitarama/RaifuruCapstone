@@ -16,7 +16,7 @@ let { hash, compare, hashSync } = require("bcrypt");
 }
 
  const getProductById = (id, result) => {
-    db.query(`SELECT * FROM Products WHERE ID = ?`, [id], (err, results) => {             
+    db.query(`SELECT * FROM Products WHERE prodID = ?`, [id], (err, results) => {             
         if(err) {
             console.log(err);
             result(err, null);
@@ -114,5 +114,29 @@ const login = (data, result) => {
     })
 }
 
-module.exports = {getProducts, getProductById, insertProduct, updateProductById, deleteProductById, getUsers, getUserById, deleteUserById, registerUser, updateUser, login};
+// const addToWishlist = async (req, res) => {
+//     const { _id} = req.user;
+//     const {prodID} = req.body;
+//     try {
+//         const user = User.userID(_id);
+//         const alreadyAdded =
+//     }
+//      catch (err) {
+//         throw new Error (err)
+//     }
+//     };
+
+module.exports = {getProducts, 
+    getProductById, 
+    insertProduct, 
+    updateProductById, 
+    deleteProductById, 
+    getUsers, 
+    getUserById, 
+    deleteUserById, 
+    registerUser, 
+    updateUser, 
+    login 
+    // addToWishlist
+};
 
