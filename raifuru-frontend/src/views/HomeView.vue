@@ -1,6 +1,6 @@
 <template>
   <div class="body">
-    <div class="animate_animated animate__fadeInLeft">
+    <!-- <div class="animate_animated animate__fadeInLeft">
       <h1>Welcome to</h1>
     </div>
 
@@ -8,22 +8,8 @@
     <h1>Raifuru Artillery</h1>
     <button class="login">Login</button><button class="register">Create an Account</button>
     <img src="https://i.postimg.cc/7LgGRh06/pngegg-7.png">
-    </div>
-
-    <!-- <div class="ad">
-      <img src="https://i.postimg.cc/1X9M7bdg/anatomy-arisaka-type99.png">
     </div> -->
-    
-    <!-- <p>“Wouldn’t you like to get a full historical background on the arson you’re
- planning on buying?”</p>
 
-<p>“Wouldn’t you want to know how far your firearm of choice has come? And, who designed it?
-As well as, which era your arsenal belongs to and what kind of battlefields they were used on?”
-</p>
-<p>“Well, here at Raifuru Artillery (which is rifle in Japanese/Cantonese), we specialise in giving
-a full historical background on every rifle, as well as trying to create an environment
-for mostly women that want to become bad asses and protect themselves without the help of anyone!” 
-</p> -->
   
   <div class="carousel">
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
@@ -67,7 +53,7 @@ for mostly women that want to become bad asses and protect themselves without th
     <div class="col-sml-4 d-flex">
       
       <img src="https://i.postimg.cc/QM7vT5gR/9hs69sf02it31.webp"/>
-    
+     
     
       <img src="https://i.postimg.cc/PqVDD3hq/bjxhnie02it31.webp"/>
     
