@@ -6,19 +6,19 @@
             <h1>Create an Account Here:</h1>
         </div>
 
-        <form class="form">
+        <form class="form" @submit.prevent="register">
         
             <div class="mb-3">
     <label for="exampleInputName" class="form-label">First Name</label>
-    <input type="name" class="form-control" id="exampleInputName">
+    <input type="name" v-model="payload.firstName" class="form-control" id="exampleInputName">
   </div>
   <div class="mb-3">
     <label for="exampleInputName" class="form-label">Last Name</label>
-    <input type="name" class="form-control" id="exampleInputName">
+    <input type="name" v-model="payload.lastName" class="form-control" id="exampleInputName">
   </div>
   <div class="md-3 mb-2">              
     <label for="validationDefault04" class="form-label">Province</label>              
-    <select class="form-select" id="validationDefault04" name="name" required>                
+    <select class="form-select" v-model="payload.province" id="validationDefault04" name="name" required>                
       <option selected disabled value="">Choose One</option>                
       <option>Western Cape</option>                
       <option>Eastern Cape</option>                
@@ -33,12 +33,12 @@
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="email" v-model="payload.emailAdd" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
+    <input type="password" v-model="payload.userPass" class="form-control" id="exampleInputPassword1">
   </div>
   
   <div class="mb-3 form-check">
@@ -50,6 +50,39 @@
 
     </div>
 </template>
+
+<script>
+import { computed } from "@vue/runtime-core";
+import { useStore } from "vuex";
+export default {
+  setup() {
+    
+  const payload = {
+    firstName: '',
+    lastName: '',
+    province: '',
+    emailAdd: '',
+    userPass: ''
+  }
+ const store = useStore();
+
+ const message = computed( () => store.state.message)
+
+ return {
+  payload, message
+ }
+},
+methods: {
+  register() {
+    this.$store.dispatch("register", this.payload)
+  }
+}
+  };
+ 
+
+
+
+</script>
 
 <style scoped>
 

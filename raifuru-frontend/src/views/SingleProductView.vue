@@ -3,10 +3,13 @@
         <h1>Single View Product</h1>
         <div
         class="card col-3">
-        <img v-bind:src="product?.img" class="card-img-top" alt="..."/>
+        <img v-bind:src="product?.imgURL" class="card-img-top" alt="..."/>
         <div class="card-body">
-          <p class="name">{{ product.prodName }}</p>
-          <p class="name">{{ product.caliber }}</p>
+          <p class="name">GUN NAME: {{ product.prodName }}</p>
+          <p class="type">TYPE: {{ product.typeGun }}</p>
+          <p class="caliber">CALIBER: {{ product.caliber }}</p>
+          <p class="origin">ORIGIN: {{ product.origin }}</p>
+          <p class="year">YEAR: {{ product.yearModel }}</p>
           <p class="price">R{{ product.price }}</p>
         </div>
         </div>
@@ -37,6 +40,10 @@ export default {
 
 <style scoped>
 
+.single p {
+    font-weight: bold;
+}
+
 h1 {
     font-family:  Georgia, "Times New Roman", Times, serif;
     margin-bottom: 2rem;
@@ -46,6 +53,8 @@ h1 {
     
 }
 .card {
+    margin-left: 30px;
+    margin-bottom: 30px;
     width: 40rem;
     height: 35rem;
     font-family:  Georgia, "Times New Roman", Times, serif;
@@ -56,6 +65,7 @@ h1 {
     color: darkslategray;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 10px;
+    margin-left: 50px;
     height: 20rem;
 }
 

@@ -1,6 +1,6 @@
 <template>
   <div class="body">
-    <!-- <div class="animate_animated animate__fadeInLeft">
+    <div class="animate_animated animate__fadeInLeft">
       <h1>Welcome to</h1>
     </div>
 
@@ -8,7 +8,7 @@
     <h1>Raifuru Artillery</h1>
     <button class="login">Login</button><button class="register">Create an Account</button>
     <img src="https://i.postimg.cc/7LgGRh06/pngegg-7.png">
-    </div> -->
+    </div>
 
   
   <div class="carousel">
@@ -34,6 +34,9 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button> -->
+</div>
+<div class="image">
+  <img src="https://i.postimg.cc/GhL104Kz/anatomy-arisaka-type99.png">
 </div>
   </div>
 
@@ -108,10 +111,18 @@ body{
 .carousel {
   position: relative;
   left: 36.5rem;
-  bottom: 70px;
+  bottom: 150px;
   height: 1px;
   width: 22rem;
   
+}
+
+.image img {
+  position: relative;
+  width: 24rem;
+  height: 14rem;
+  left: 10rem;
+  top: 170px;
 }
 
 .home h1 {

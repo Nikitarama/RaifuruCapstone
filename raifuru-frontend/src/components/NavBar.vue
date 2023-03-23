@@ -126,16 +126,15 @@ a {
    background-color: darkkhaki;
    border: 3px solid darkkhaki;
    color: darkkhaki;
-   background-color: rgba(96, 92, 92, 0.1);
+   background-color: rgba(0, 0, 0, 0);
 
 }
 
 .btn:hover {
-    background-color: darkkhaki;
-    border: 2px solid antiquewhite;
-    color: antiquewhite;
-    border: 3px solid antiquewhite;
-    /* box-shadow: 2px 2px 10px lightgrey; */
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 2px solid burlywood;
+    color: burlywood;
+    border: 3px solid burlywood;
 }
 
 .material-symbols-outlined {

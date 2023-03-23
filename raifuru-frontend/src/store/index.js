@@ -16,7 +16,10 @@ export default createStore({
 
   mutations: {
     setUsers(state, users){
-      state.users=values
+      state.users=users
+    },
+    setUser(state, user){
+      state.user = user
     },
     setProducts(state,values){
       state.products=values
@@ -46,6 +49,16 @@ export default createStore({
       } else {
         context.commit('setMessage',err)
       }
+  },
+
+  async register(context, payload){
+    const res = await axios.post(`${raifuruURL}register`, payload);
+    const {msg, err} = await res.data;
+    if(msg){
+      context.commit('setMessage', msg)
+    } else {
+      context.commit('setMessage', err)
+    }
   },
 
   async deleteProduct (content) {

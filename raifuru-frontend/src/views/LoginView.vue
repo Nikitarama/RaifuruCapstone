@@ -20,7 +20,11 @@
         <label class="form-check-label" for="exampleCheck1">Remember My Password</label>
         </div>
         <button id="{{user.ID}}" type="submit" class="btn btn-secondary">Submit</button>
-    </form>
+        
+        <p>If you don't have an account. <router-link to="/register">Create an Account?</router-link></p>
+</form>
+
+    
 </template>
 
 <style scoped>
@@ -46,5 +50,9 @@
 
 input {
     background-color: lavender;
+}
+
+.form p {
+    margin-top: 40px;
 }
 </style>

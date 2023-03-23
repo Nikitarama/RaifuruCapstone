@@ -23,7 +23,7 @@
           <td>R{{ product.price }}</td>
           <td>
             <img
-              :src="product.img"
+              :src="product.imgURL"
               class="card-img-top"
               alt="..."
               style="width: 90px; height: 60px"
@@ -45,6 +45,7 @@ edit
     </table>
   </td>
 
+
   <h1 class="user">User Profiles:</h1>
   <td>
     <table class="userlist" id="userList">
@@ -55,6 +56,7 @@ edit
           <th>Last Name</th>
           <th>EmailAdd</th>
           <th>Province</th>
+          <th>User Profile</th>
         </tr>
       </thead>
       <tbody>
@@ -64,6 +66,11 @@ edit
           <td>{{ user.lastName }}</td>
           <td>{{ user.emailAdd }}</td>
           <td>{{ user.province }}</td>
+          <td>
+            <RouterLink :to="{name: 'UserProfile', params:{id:user.userID}}">
+              <button @click="this.$store.dispatch('UserProfile', user.ID)" id="{{user.ID}}" class="btn btn-warning">View</button>
+            </RouterLink>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -94,7 +101,9 @@ export default {
 </script>
 
 <style scoped>
-
+.admin {
+  margin-top: -15rem;
+}
 .list {
   width: 94rem;
   margin-bottom: 1rem;
@@ -113,6 +122,10 @@ export default {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.userlist button {
+  border-radius: 20px;
+}
+
 .list th{
     border-bottom: 2px solid lightgrey;
 }
@@ -125,6 +138,10 @@ export default {
 .userlist th {
     border-bottom: 2px solid lightgrey;
     
+}
+
+.userlist td {
+  border-bottom: 2px solid lightgrey;
 }
 .user {
   margin-top: 10px;

@@ -21,7 +21,7 @@
         :key="product.prodID">
         
         <img
-          :src="product.img"
+          :src="product.imgURL"
           class="card-img-top"
           alt="..."/>
         <div class="card-body">
@@ -72,14 +72,14 @@ export default {
   border-radius: 20px;
   padding: 7px;
   width: 40rem;
-  top: 10rem;
+  top: 3rem;
   border: 2px solid darkkhaki;
   font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 .products-page {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 18rem;
+    margin-top: 6rem;
     padding: 20px;
     background-position: center 40px;
     background-repeat: no-repeat;
