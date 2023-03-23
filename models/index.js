@@ -40,7 +40,7 @@ const insertProduct = (data, result) => {
   
 // Update Product to Database
  const updateProductById = (data, id, result) => {
-    db.query(`UPDATE Products SET ? WHERE ID = ?`, [data, id], (err, results) => {             
+    db.query(`UPDATE Products SET ? WHERE prodID = ?`, [data, id], (err, results) => {             
         if(err) {
             console.log(err);
             result(err, null);
@@ -52,7 +52,7 @@ const insertProduct = (data, result) => {
   
 // Delete Product to Database
  const deleteProductById = (id, result) => {
-    db.query(`DELETE FROM Products WHERE ID = ?`, [id], (err, results) => {             
+    db.query(`DELETE FROM Products WHERE prodID = ?`, [id], (err, results) => {             
         if(err) {
             console.log(err);
             result(err, null);
@@ -114,17 +114,6 @@ const login = (data, result) => {
     })
 }
 
-// const addToWishlist = async (req, res) => {
-//     const { _id} = req.user;
-//     const {prodID} = req.body;
-//     try {
-//         const user = User.userID(_id);
-//         const alreadyAdded =
-//     }
-//      catch (err) {
-//         throw new Error (err)
-//     }
-//     };
 
 module.exports = {getProducts, 
     getProductById, 

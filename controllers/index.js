@@ -98,8 +98,8 @@ const createUser = (req,res) => {
     registerUser(data, (err,results) => {
         if(err) res.send(err);
         else {
-            const jwt = createToken(user);
-            res.cookie("LegitUser", jwt, {
+            const jwToken = createToken(user);
+            res.cookie("LegitUser", jwToken, {
                 maxAge: 3600000,
                 httpOnly: true
             });
