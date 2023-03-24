@@ -1,5 +1,5 @@
 //Importing the models
-const {getProducts, getProductById, insertProduct, updateProductById, deleteProductById, getUsers, getUserById, deleteUserById, registerUser, updateUser, login} = require('../models/index');
+const {getProducts, getProductById, addProduct, updateProductById, deleteProductById, getUsers, getUserById, deleteUserById, registerUser, updateUser, login} = require('../models/index');
 let { createToken } = require("../middleware/AuthenticatedUser");
 
 
@@ -27,9 +27,9 @@ let { createToken } = require("../middleware/AuthenticatedUser");
 };
 
 //Insert new product
- const createProduct = (req, res) => {
+ const insertProduct = (req, res) => {
     const data = req.body;
-    insertProduct(data, (err, results) => {
+    addProduct(data, (err, results) => {
         if (err){
             res.send(err);
         }else{
@@ -147,4 +147,4 @@ const userLogin = (req,res) => {
     })
 }
 
-module.exports = {showProducts, showProductById, createProduct, updateProduct, deleteProduct, showUsers, showUserById, deleteUser, createUser, updateUserData, userLogin};
+module.exports = {showProducts, showProductById, insertProduct, updateProduct, deleteProduct, showUsers, showUserById, deleteUser, createUser, updateUserData, userLogin};

@@ -5,7 +5,7 @@ const express = require("express");
 // init express router
 const router = express.Router();
 // import function from controller
-const {showProducts, showProductById, createProduct, updateProduct, deleteProduct, showUsers, showUserById, deleteUser, createUser, updateUserData, userLogin} = require("../controllers/index");
+const {showProducts, showProductById, insertProduct, updateProduct, deleteProduct, showUsers, showUserById, deleteUser, createUser, updateUserData, userLogin} = require("../controllers/index");
   
   
 router.get('^/$|/raifuru', (req, res)=>{
@@ -19,7 +19,7 @@ router.get('/products', showProducts);
 router.get('/products/:id', bodyParser.json(), showProductById);
   
 // Create New Product
-router.post('/products', bodyParser.json(), createProduct);
+router.post('/products', bodyParser.json(), insertProduct);
   
 // Update Product
 router.put('/products/:id', bodyParser.json(), updateProduct);

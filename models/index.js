@@ -27,7 +27,7 @@ let { hash, compare, hashSync } = require("bcrypt");
 }
   
 // Insert Product to Database
-const insertProduct = (data, result) => {
+const addProduct = (data, result) => {
     db.query("INSERT INTO Products SET ?", [data], (err, results) => {             
         if(err) {
             console.log(err);
@@ -117,7 +117,7 @@ const login = (data, result) => {
 
 module.exports = {getProducts, 
     getProductById, 
-    insertProduct, 
+    addProduct, 
     updateProductById, 
     deleteProductById, 
     getUsers, 
