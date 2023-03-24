@@ -54,13 +54,12 @@ export default {
   setup() {
     const store = useStore();
     store.dispatch("fetchProducts");
-    store.dispatch("fetchUsers");
+  
     const products = computed(() => store.state.products);
-    const users = computed(() => store.state.users);
+
     console.log(users);
     return {
-      products,
-      users,
+      products
     };
   },
 };

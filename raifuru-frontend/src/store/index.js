@@ -1,5 +1,8 @@
-import { createStore } from 'vuex'
+import { createStore } from 'vuex';
+import { useCookies } from "vue3-cookies";
+const {cookies} = useCookies();
 import axios from 'axios';
+import router from "../router/index";
 const raifuruURL='http://localhost:3500/'; //from render.com
 export default createStore({
   state: {
@@ -29,6 +32,9 @@ export default createStore({
     },
     setSingleProduct(state, product){
       state.singleProduct = product;
+    },
+    setSpinner(state,showSpinner){
+      state.showSpinner = showSpinner;
     }
     
   },
@@ -61,6 +67,22 @@ export default createStore({
     }
   },
 
+  async login (context, payload){
+    console.log(payload)
+    const res = await axios.post(`${raifuruURL}login`, payload);
+    console.log(res, "Response: ");
+    const { jwToken, result, msg, err } = await res.data;
+    if (result) {
+      context.commit('setUser', result);
+      context.commit('setMessage', msg);
+      context.commit('setSpinner', false);
+      cookies.set("LegitUser", jwToken);
+      router.push("/");
+    } else {
+      context.commit("setMessage", err);
+    }
+  },
+
   async deleteProduct (content) {
     const res = await axios.delete(`${raifuruURL}products`);
     const {result,err}= await res.data;
@@ -71,9 +93,10 @@ export default createStore({
 
 }
 },
-async addProduct (content) {
-  const res = await axios.post(`${raifuruURL}products`);
+async addProduct (context, payload ) {
+  const res = await axios.post(`${raifuruURL}products`, payload);
   const {result,err}= await res.data;
+  console.log(res.data);
   if (result){
     context.commit('setProducts',result)
   } else {

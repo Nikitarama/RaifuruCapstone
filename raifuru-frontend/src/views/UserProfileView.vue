@@ -3,12 +3,12 @@
         <h1>User Profile Page</h1>
         <div
         class="card col-5">
-        <img v-bind:src="user?.imgURL" class="card-img-top" alt="..."/>
+        <img v-bind:src="$user?.imgURL" class="card-img-top" alt="..."/>
         <div class="card-body">
-          <p class="name">{{ user.firstName }}</p>
-          <p class="last">{{ user.lastName }}</p>
-          <p class="email">{{ user.emailAdd }}</p>
-          <p class="province">{{ user.province }}</p>
+          <p class="name">{{ $user.firstName }}</p>
+          <p class="last">{{ $user.lastName }}</p>
+          <p class="email">{{ $user.emailAdd }}</p>
+          <p class="province">{{ $user.province }}</p>
          
         </div>
         </div>

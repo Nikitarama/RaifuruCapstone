@@ -50,6 +50,11 @@ const routes = [
     name: 'singleProduct',
     component: () => import('../views/SingleProductView.vue'),
     props: true
+  },
+  {
+    path: '/userProfile',
+    name: 'userProfile',
+    component: () => import('../views/UserProfileView.vue')
   }
 ]
 
