@@ -138,7 +138,6 @@ const userLogin = (req,res) => {
                     jwt,
                     result: results
                 })
-              
             } else {
                 res.status(401).json({
                     err: 'Incorrect Information!'
