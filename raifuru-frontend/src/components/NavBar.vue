@@ -13,13 +13,12 @@ menu
   </div>
   <div class="offcanvas-body">
 
-    <router-link to="/register"> <span class="material-symbols-outlined">
-assignment_add
-</span> Register  
+    <router-link to="/register"> <span class="material-symbols-outlined"> assignment_add</span> Register  
 
       
 </router-link> 
 <br>
+
 
     <router-link to="/login"><span class="material-symbols-outlined">
 login
@@ -122,7 +121,7 @@ a {
 .btn {
    position: relative;
    top: 4.3rem;
-   right: 7.5rem;
+   right: 9.5rem;
    background-color: darkkhaki;
    border: 3px solid darkkhaki;
    color: darkkhaki;

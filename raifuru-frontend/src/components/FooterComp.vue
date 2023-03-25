@@ -104,6 +104,7 @@ footer p {
     position: relative;
     padding: 0px 0 14px 34px;
     line-height: 26px;
+    font-family:  Georgia, "Times New Roman", Times, serif;
 }
 ul.address1 span {
     position: absolute;

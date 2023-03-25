@@ -131,7 +131,7 @@ edit
           <td>{{ user.province }}</td>
           <td>
             <RouterLink :to="{name: 'userProfile', params:{id:user.userID}}">
-              <button @click="($event) => this.$store.dispatch('UserProfile', user.ID)" id="{{user.ID}}" class="btn btn-warning">View</button>
+              <button @click="($event) => this.$store.dispatch('UserProfile', user.userID)" id="{{user.userID}}" class="btn btn-secondary">View</button>
             </RouterLink>
           </td>
         </tr>
@@ -184,8 +184,6 @@ export default {
   }
 };
 
-
-
 </script>
 
 <style scoped>
@@ -211,7 +209,15 @@ export default {
 }
 
 .userlist button {
-  border-radius: 20px;
+  border-radius: 5px;
+  padding: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.userlist button:hover {
+  background-color: seagreen;
+  color: white;
 }
 
 .list th{
@@ -254,6 +260,12 @@ export default {
   right: 10rem;
   background-color: lavender;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media(max-width: 400px) {
+  .admin {
+    width: 30rem;
+  }
 }
 
 </style>

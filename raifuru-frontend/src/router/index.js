@@ -10,9 +10,6 @@ const routes = [
   {
     path: '/admin',
     name: 'admin',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import('../views/AdminView.vue')
   },
   {
@@ -52,7 +49,7 @@ const routes = [
     props: true
   },
   {
-    path: '/userProfile',
+    path: '/UserProfile/:id',
     name: 'userProfile',
     component: () => import('../views/UserProfileView.vue')
   }

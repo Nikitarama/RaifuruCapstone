@@ -35,9 +35,9 @@
                   <span class="visually-hidden">Next</span>
                 </button> -->
 </div>
-<div class="image">
+<!-- <div class="image">
   <img src="https://i.postimg.cc/GhL104Kz/anatomy-arisaka-type99.png">
-</div>
+</div> -->
   </div>
 
   <div class="social-icons">
@@ -52,6 +52,18 @@
     <img src="https://i.postimg.cc/7YzJYF9H/pngegg.png">
   </div>
 
+  <!-- <div class="row">
+    <div class="col-sml-4 d-flex">
+      
+      <img src="https://i.postimg.cc/QM7vT5gR/9hs69sf02it31.webp"/>
+     
+    
+      <img src="https://i.postimg.cc/PqVDD3hq/bjxhnie02it31.webp"/>
+    
+   
+      <img src="https://i.postimg.cc/fyPZjdym/2910bad104ec054f0c39a6347c498fa0.jpg"/>
+    </div>
+  </div>
   <div class="row">
     <div class="col-sml-4 d-flex">
       
@@ -63,8 +75,7 @@
    
       <img src="https://i.postimg.cc/fyPZjdym/2910bad104ec054f0c39a6347c498fa0.jpg"/>
     </div>
-
-  </div>
+    </div> -->
 
 </div>
 
@@ -72,33 +83,25 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import Home from '@/components/HomeView.vue'
 
-// export default {
-//   name: 'HomeView',
-//   components: {
-//     NavBar, Footer
-//   }
-// }
 </script>
 
 <style scoped>
 
- * {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  
-}
 body{
   overflow-x: hidden;
 }
 .body {
-  background-image: url(https://i.postimg.cc/4x4t7ytg/download.jpg);
-  /* background-image: url(https://i.postimg.cc/sXzmMDvD/rifles.jpg); */
+  /* background-image: url(https://i.postimg.cc/4x4t7ytg/download.jpg); */
+  background-image: url(https://i.postimg.cc/SNV1wHV1/anime-girls-fight.jpg) ;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 26rem;
-  background-position-x: 40px;
+  overflow: hidden;
+  width: 100%;
+  background-position-y: 11rem;
+  height: 50rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
 }
 
 /* .ad {
@@ -110,8 +113,8 @@ body{
 
 .carousel {
   position: relative;
-  left: 36.5rem;
-  bottom: 150px;
+  left: 37rem;
+  bottom: 250px;
   height: 1px;
   width: 22rem;
   
@@ -135,7 +138,7 @@ body{
 
 .animate_animated> h1 {
   position: relative;
-  left: 21rem;
+  left: 22rem;
   top: 5rem;
   font-size: 3rem;
   animation-name: fadeInLeft;
@@ -144,11 +147,12 @@ body{
   border-bottom: 3px solid darkkhaki;
   color: darkkhaki;
   text-shadow: 1px 1px 2px grey;
+  width: 30rem;
 }
 
 .anime-girl {
-  margin-top: -30rem;
-  margin-right: 12rem;
+  margin-top: -27rem;
+  margin-right: 80rem;
 
 }
 
@@ -210,6 +214,12 @@ body{
 .row {
    row-gap: 10px;
    grid-template-rows: 1fr 1fr;
+}
+
+@media(max-width: 400px) {
+  .anime-girl {
+    width: 3rem;
+  }
 }
 
 

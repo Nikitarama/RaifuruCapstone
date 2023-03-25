@@ -12,7 +12,8 @@ export default createStore({
     product:null,
     showSpinner:true,
     message:null,
-    singleProduct:null
+    singleProduct:null,
+    userProfile:null,
   },
   getters: {
   },
@@ -24,6 +25,9 @@ export default createStore({
     setUser(state, user){
       state.user = user
     },
+    setUserProfile(state, userProfile){
+      state.userProfile = userProfile
+    }, 
     setProducts(state,values){
       state.products=values
     },
@@ -42,7 +46,7 @@ export default createStore({
     async fetchUsers (context){
       const res= await axios.get (`${raifuruURL}users`);
       if (res.data){
-        context.commit('setUsers',res.data)
+        context.commit('setUsers', res.data)
       } else {
         context.commit('setMessage', 'An error occurred')
       }
@@ -73,6 +77,7 @@ export default createStore({
     console.log(res, "Response: ");
     const { jwToken, result, msg, err } = await res.data;
     if (result) {
+      console.log(result);
       context.commit('setUser', result);
       context.commit('setMessage', msg);
       context.commit('setSpinner', false);
@@ -112,6 +117,19 @@ async singleProduct(context, id){
     context.commit('setSingleProduct', data)
   }else {
     console.log(err)
+    context.commit('setMessage', err)
+  }
+},
+async userProfile(context, id){
+  const res = await axios.get(`${raifuruURL}users/${id}`,);
+  console.log(res.data[0])
+  const {data,err} = await res;
+  // console.log(data)
+  if(data){
+    // console.log(data)
+    context.commit('setUserProfile', data)
+  }else {
+    // console.log(err)
     context.commit('setMessage', err)
   }
 },

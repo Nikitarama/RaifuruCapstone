@@ -134,9 +134,11 @@ phone_iphone
   color: darkkhaki;
 }
 
-.page {
-  width: 1rem;
-  height: 10rem;
+
+@media(max-width: 400px) {
+  .all {
+    width: 30rem;
+  }
 }
 
 </style>
