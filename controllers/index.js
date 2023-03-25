@@ -134,10 +134,10 @@ const userLogin = (req,res) => {
             })
             if(results){
                 res.status(200).json({
-                    message: 'Logged in!',
                     jwt,
                     result: results
                 })
+                alert(message, 'Logged in!')
             } else {
                 res.status(401).json({
                     err: 'Incorrect Information!'
