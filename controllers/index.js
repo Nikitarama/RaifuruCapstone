@@ -134,6 +134,7 @@ const userLogin = (req,res) => {
             })
             if(results){
                 res.status(200).json({
+                    message: 'Logged in!',
                     jwt,
                     result: results
                 })
